@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/assets/images/favicon-32x32.png"
+		/>
+
+		<link href="./output.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link
+			rel="preload"
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			as="style"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+			media="print"
+			onload="this.media='all'"
+		/>
+
+		<title>Newsletter Sign-up Form</title>
+	</head>
+	<body
+		class="font-roboto lg:bg-dark-slate-grey lg:min-h-[100vh] lg:flex lg:items-center lg:justify-center"
+	>
+		<main class="">
+			<div
+				id="homepage"
+				class="lg:bg-white lg:rounded-big lg:p-[30px] lg:flex lg:gap-8"
+			>
+				<div
+					class="w-full aspect-[375/284] lg:w-[350px] lg:aspect-[3/4] lg:order-last order-first"
+				>
+					<img
+						src="/assets/images/illustration-sign-up-mobile.svg"
+						srcset="/assets/images/illustration-sign-up-desktop.svg"
+						sizes="(min-width: 1024px) 350px, 375px"
+						alt=""
+						class="w-full h-full object-cover rounded-b-medium lg:rounded-medium"
+						loading="lazy"
+					/>
+				</div>
+
+				<div class="p-5 lg:p-5 lg:pr-0 lg:mr-5">
+					<h1 class="font-bold text-big mb-little text-neutral-dark-slate-grey">
+						Stay updated!
+					</h1>
+					<p class="text-dark-slate-grey mb-medium">
+						Join 60,000+ product managers receiving monthly updates on:
+					</p>
+					<ol class="space-y-2.5">
+						<li class="flex items-start gap-4">
+							<img
+								src="/assets/images/icon-list.svg"
+								alt=""
+								class="w-medium h-medium mt-0.5"
+							/>
+							<span>Product discovery and building what matters</span>
+						</li>
+						<li class="flex items-start gap-4">
+							<img
+								src="/assets/images/icon-list.svg"
+								alt=""
+								class="w-medium h-medium mt-0.5"
+							/>
+							<span>Measuring to ensure updates are a success</span>
+						</li>
+						<li class="flex items-start gap-4 mb-medium">
+							<img
+								src="/assets/images/icon-list.svg"
+								alt=""
+								class="w-medium h-medium mt-0.5"
+							/>
+							<span>And much more!</span>
+						</li>
+					</ol>
+					<form id="form" class="lg:max-w-width-huge">
+						<label
+							for="email"
+							class="text-dark-slate-grey font-bold flex justify-between"
+						>
+							<span>Email address</span>
+							<span id="email-error" class="text-red-500 text-sm hidden"
+								>Valid email required</span
+							>
+						</label>
+						<input
+							type="text"
+							name="email"
+							id="email"
+							placeholder="email@company.com"
+							class="border-grey border-[1px] rounded-small w-full p-little mb-medium focus:ring-dark-slate-grey hover:cursor-pointer"
+							required
+						/>
+						<button
+							type="submit"
+							class="font-bold text-white bg-dark-slate-grey p-small w-full rounded-small hover:bg-gradient-to-r hover:from-hover-gradient-start hover:to-hover-gradient-end transition-all duration-300 hover:shadow-lg hover:cursor-pointer"
+						>
+							Subscribe to monthly newsletter
+						</button>
+					</form>
+				</div>
+			</div>
+			<div
+				id="success-message-page"
+				class="hidden flex flex-col justify-between h-screen p-5 lg:p-10 lg:bg-white lg:rounded-big lg:max-w-width-huge lg:h-auto"
+			>
+				<div class="mt-20 lg:mt-0">
+					<img src="/assets/images/icon-success.svg" alt="" class="mb-5" />
+					<h2 class="font-bold text-big text-dark-slate-grey mb-medium">
+						Thanks for subscribing!
+					</h2>
+					<p class="text-neutral-dark-slate-grey">
+						A confirmation email has been sent to
+						<span id="email-address" class="font-bold"></span>. Please open it
+						and click the button inside to confirm your subscription.
+					</p>
+				</div>
+
+				<div
+					id="button-container"
+					class="hidden mb-8 w-full max-w-md mx-auto lg:mt-10"
+				>
+					<button
+						class="font-bold text-white bg-dark-slate-grey rounded-small p-small w-full shadow-xl hover:bg-gradient-to-r hover:from-hover-gradient-start hover:to-hover-gradient-end transition-all duration-300 hover:shadow-lg hover:cursor-pointer"
+						id="dismiss-button"
+					>
+						Dismiss message
+					</button>
+				</div>
+			</div>
+		</main>
+	</body>
+	<script src="/src/script.js" defer></script>
+</html>

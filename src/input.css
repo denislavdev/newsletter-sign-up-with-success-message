@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme {
+	--font-roboto: [ "Roboto", "sans-serif"];
+	--color-tomato: hsl(4, 100%, 67%);
+	--color-dark-slate-grey: hsl(234, 29%, 20%);
+	--color-charcoal-grey: hsl(235, 18%, 26%);
+	--color-grey: hsl(231, 7%, 60%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-hover-gradient-start: hsl(347, 100%, 66%);
+	--color-hover-gradient-end: hsl(13, 100%, 62%);
+	--spacing-medium: 1.25rem;
+	--spacing-small: 0.9375rem;
+	--spacing-little: 0.625rem;
+	--radius-medium: 15px;
+	--radius-small: 5px;
+	--radius-big: 30px;
+	--text-big: 2.5rem;
+	--spacing-width-huge: 400px;
+	--breakpoint-lg: 900px;
+}
