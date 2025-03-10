@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](newsletter-sign-up-with-success-message-denislav.vercel.app)
-- Live Site URL: [Live site URL here](https://github.com/denislavdev/newsletter-sign-up-with-success-message)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/newsletter-with-sign-up-success-message-ZpIo1ItAmG)
+- Live Site URL: [Live site URL here](https://newsletter-sign-up-with-success-message-denislav.vercel.app)
 
 ## My process
 
